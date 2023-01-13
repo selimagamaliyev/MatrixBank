@@ -38,14 +38,14 @@ namespace MatrixBank
             saving.ApplyInterest(1025);
             Console.WriteLine($"Savings balance is {saving.Initial_balance:C2}");
 
-            saving.Withraw(10.00m);
-            saving.Withraw(20.00m);
-            saving.Withraw(30.00m);
+            saving.Withdraw(10.00m);
+            saving.Withdraw(20.00m);
+            saving.Withdraw(30.00m);
 
 
             Console.WriteLine($"Savings balance is {saving.Initial_balance:C2}");
 
-            saving.Withraw(2000.0m);
+            saving.Withdraw(2000.0m);
             checking.Withdraw(3000.0m);
 
 

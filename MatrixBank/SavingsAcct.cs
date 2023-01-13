@@ -30,10 +30,10 @@ namespace MatrixBank
             return Initial_balance += money;
         }
 
-        public decimal Withdraw(decimal money)
-        {
-            return Initial_balance -= money;
-        }
+        //public decimal Withdraw(decimal money)
+        //{
+        //    return Initial_balance -= money;
+        //}
 
         public decimal ApplyInterest(decimal money)
         {
@@ -42,11 +42,11 @@ namespace MatrixBank
 
 
         int comissioncount = 0;
-        public decimal Withraw(decimal money)
+        public decimal Withdraw(decimal money)
         {
             if (money < Initial_balance)
             {
-                if (comissioncount >= 2)
+                if (comissioncount >= 3)
                 {
                     return Initial_balance = Initial_balance - (money + 2);
                 }
